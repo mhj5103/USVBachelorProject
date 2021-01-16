@@ -1,0 +1,13 @@
+from pysondb import db
+a=db.getDb("db.json")
+a.add({"name":"XCoord","value":"0"})
+a.add({"name":"YCoord","value":"0"})
+a.add({"name":"Kp","value":"0"})
+a.add({"name":"Ki","value":"0"})
+a.add({"name":"Kd","value":"0"})
+a.add({"name":"Kp2","value":"0"})
+a.add({"name":"Ki2","value":"0"})
+a.add({"name":"Kd2","value":"0"})
+a.add({"name":"Kp3","value":"0"})
+a.add({"name":"Ki3","value":"0"})
+a.add({"name":"Kd3","value":"0"})

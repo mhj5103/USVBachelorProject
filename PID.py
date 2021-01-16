@@ -11,5 +11,9 @@ class PID:
         u = self.Kp * diff + self.Ki* self.sum + (self.temp - diff)* self.Kd
         self.temp = diff
         return u
-
-    
+    def setKp(self, kp):
+        self.Kp = kp
+    def setKi(self, ki):
+        self.Ki = ki
+    def setKd(self, kd):
+        self.Kd =kd
