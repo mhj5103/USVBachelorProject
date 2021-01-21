@@ -14,7 +14,7 @@ YCoord = -50.0
 Angle = 0.5*math.pi
 DistanceToTarget = 5
 DistanceToTargetY = 0.1
-
+FarDistanceModeSpeed = 5
 a=db.getDb("db.json")
 def control_loop(num): 
     n = 0
@@ -25,20 +25,13 @@ def control_loop(num):
             startTime += 0.01
            
             tempComplex = complex(XCoord-myBoat.getXCoordinate(),YCoord-myBoat.getYCoordinate())
-            tempPolar = cmath.polar(tempComplex)
-            if tempPolar[1] < 0:
-                tempPolar[1] + 2* math.pi
-            
+            tempPolar = cmath.polar(tempComplex)            
             PIDAngle = PIDA.regulator(tempPolar[1])
-            PIDDistance = PIDD.regulator(tempPolar[0])
             print("Im updating current coordinates and calculating angles + distances")
             print("We are on iteration:", n)
             print("The angle is: ",  tempPolar[1])
             print("The angle PID value is: ", PIDAngle)
-
-            if PIDDistance > 10:
-                PIDDistance = 10
-            myBoat.updateSpeed(PIDDistance-PIDAngle, PIDDistance+PIDAngle, 0)
+            myBoat.updateSpeed(FarDistanceModeSpeed-PIDAngle, FarDistanceModeSpeed+PIDAngle, 0)
             n = n+1
             if n > 400:
                 break

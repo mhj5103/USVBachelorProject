@@ -7,7 +7,7 @@ from Point import Point
 import cmath
 class myBoat:
     def __init__(self):
-        self.printInfo = 0
+        self.printInfoVar = 0
         self.VelocityX = 0.0
         self.VelocityY = 0.0
         self.Velocity = 0.0 # m/s
@@ -58,7 +58,7 @@ class myBoat:
         tx = (NewtonLeft + NewtonRight) * math.cos(self.Heading)
         ty = (NewtonLeft + NewtonRight) * math.sin(self.Heading)
 
-        if self.printInfo == 1:
+        if self.printInfoVar == 1:
             print(f"vx is : {vx}")
             print(f"vy is : {vy}")
             print(f"alpha is : {alpha}")
