@@ -1,0 +1,600 @@
+We are on iteration : 1
+X position is : -0.15625
+Y position is : 0.0
+Heading is : 0.0
+Velocity is : 0.625
+Direction is : 1776.5287921960844
+We are on iteration : 2
+X position is : -0.4296875
+Y position is : 9.567553118338697e-18
+Heading is : 0.0
+Velocity is : 1.09375
+Direction is : 1776.5287921960844
+We are on iteration : 3
+X position is : -0.791015625
+Y position is : 2.6310771075431416e-17
+Heading is : 0.0
+Velocity is : 1.4453125
+Direction is : 1776.5287921960844
+We are on iteration : 4
+X position is : -1.21826171875
+Y position is : 4.843573766158965e-17
+Heading is : 0.0
+Velocity is : 1.708984375
+Direction is : 1776.5287921960844
+We are on iteration : 5
+X position is : -1.6949462890625
+Y position is : 7.459701571954703e-17
+Heading is : 0.0
+Velocity is : 1.90673828125
+Direction is : 1776.5287921960844
+We are on iteration : 6
+X position is : -2.208709716796875
+Y position is : 1.0378552738135375e-16
+Heading is : 0.0
+Velocity is : 2.0550537109375
+Direction is : 1776.5287921960844
+We are on iteration : 7
+X position is : -2.7502822875976562
+Y position is : 1.352444642460475e-16
+Heading is : 0.0
+Velocity is : 2.166290283203125
+Direction is : 1776.5287921960844
+We are on iteration : 8
+X position is : -3.312711715698242
+Y position is : 1.684062200129065e-16
+Heading is : 0.0
+Velocity is : 2.2497177124023438
+Direction is : 1776.5287921960844
+We are on iteration : 9
+X position is : -3.8907837867736816
+Y position is : 2.0284508995638946e-16
+Heading is : 0.0
+Velocity is : 2.312288284301758
+Direction is : 1776.5287921960844
+We are on iteration : 10
+X position is : -4.480587840080261
+Y position is : 2.3824179553234037e-16
+Heading is : 0.0
+Velocity is : 2.3592162132263184
+Direction is : 1776.5287921960844
+We are on iteration : 11
+X position is : -5.079190880060196
+Y position is : 2.7435687783264224e-16
+Heading is : 0.0
+Velocity is : 2.3944121599197388
+Direction is : 1776.5287921960844
+We are on iteration : 12
+X position is : -5.684393160045147
+Y position is : 3.1101074267620733e-16
+Heading is : 0.0
+Velocity is : 2.420809119939804
+Direction is : 1776.5287921960844
+We are on iteration : 13
+X position is : -6.29454487003386
+Y position is : 3.4806869442721987e-16
+Heading is : 0.0
+Velocity is : 2.440606839954853
+Direction is : 1776.5287921960844
+We are on iteration : 14
+X position is : -6.908408652525395
+Y position is : 3.8542971135881797e-16
+Heading is : 0.0
+Velocity is : 2.45545512996614
+Direction is : 1776.5287921960844
+We are on iteration : 15
+X position is : -7.525056489394046
+Y position is : 4.2301802717585526e-16
+Heading is : 0.0
+Velocity is : 2.466591347474605
+Direction is : 1776.5287921960844
+We are on iteration : 16
+X position is : -8.143792367045535
+Y position is : 4.607768171569719e-16
+Heading is : 0.0
+Velocity is : 2.4749435106059536
+Direction is : 1776.5287921960844
+We are on iteration : 17
+X position is : -8.764094275284151
+Y position is : 4.98663462761148e-16
+Heading is : 0.0
+Velocity is : 2.4812076329544652
+Direction is : 1776.5287921960844
+We are on iteration : 18
+X position is : -9.385570706463113
+Y position is : 5.366460000826189e-16
+Heading is : 0.0
+Velocity is : 2.485905724715849
+Direction is : 1776.5287921960844
+We are on iteration : 19
+X position is : -10.007928029847335
+Y position is : 5.747004561920607e-16
+Heading is : 0.0
+Velocity is : 2.4894292935368867
+Direction is : 1776.5287921960844
+We are on iteration : 20
+X position is : -10.630946022385501
+Y position is : 6.128088513924808e-16
+Heading is : 0.0
+Velocity is : 2.492071970152665
+Direction is : 1776.5287921960844
+We are on iteration : 21
+X position is : -11.254459516789126
+Y position is : 6.509577009111346e-16
+Heading is : 0.0
+Velocity is : 2.4940539776144988
+Direction is : 1776.5287921960844
+We are on iteration : 22
+X position is : -11.878344637591844
+Y position is : 6.891368911684636e-16
+Heading is : 0.0
+Velocity is : 2.495540483210874
+Direction is : 1776.5287921960844
+We are on iteration : 23
+X position is : -12.502508478193883
+Y position is : 7.27338836979799e-16
+Heading is : 0.0
+Velocity is : 2.4966553624081556
+Direction is : 1776.5287921960844
+We are on iteration : 24
+X position is : -13.126881358645413
+Y position is : 7.655578494566393e-16
+Heading is : 0.0
+Velocity is : 2.4974915218061167
+Direction is : 1776.5287921960844
+We are on iteration : 25
+X position is : -13.75141101898406
+Y position is : 8.037896619326082e-16
+Heading is : 0.0
+Velocity is : 2.4981186413545875
+Direction is : 1776.5287921960844
+We are on iteration : 26
+X position is : -14.376058264238045
+Y position is : 8.420310744079236e-16
+Heading is : 0.0
+Velocity is : 2.4985889810159407
+Direction is : 1776.5287921960844
+We are on iteration : 27
+X position is : -15.000793698178533
+Y position is : 8.802796868827488e-16
+Heading is : 0.0
+Velocity is : 2.4989417357619557
+Direction is : 1776.5287921960844
+We are on iteration : 28
+X position is : -15.6255952736339
+Y position is : 9.185336993572064e-16
+Heading is : 0.0
+Velocity is : 2.4992063018214665
+Direction is : 1776.5287921960844
+We are on iteration : 29
+X position is : -16.250446455225426
+Y position is : 9.567917618313883e-16
+Heading is : 0.0
+Velocity is : 2.4994047263661
+Direction is : 1776.5287921960844
+We are on iteration : 30
+X position is : -16.87533484141907
+Y position is : 9.950528618053633e-16
+Heading is : 0.0
+Velocity is : 2.499553544774575
+Direction is : 1776.5287921960844
+We are on iteration : 31
+X position is : -17.5002511310643
+Y position is : 1.0333162399041835e-15
+Heading is : 0.0
+Velocity is : 2.4996651585809313
+Direction is : 1776.5287921960844
+We are on iteration : 32
+X position is : -18.125188348298224
+Y position is : 1.0715813265966372e-15
+Heading is : 0.0
+Velocity is : 2.4997488689356984
+Direction is : 1776.5287921960844
+We are on iteration : 33
+X position is : -18.750141261223668
+Y position is : 1.1098476947343163e-15
+Heading is : 0.0
+Velocity is : 2.4998116517017737
+Direction is : 1776.5287921960844
+We are on iteration : 34
+X position is : -19.37510594591775
+Y position is : 1.1481150239559143e-15
+Heading is : 0.0
+Velocity is : 2.4998587387763305
+Direction is : 1776.5287921960844
+We are on iteration : 35
+X position is : -20.00007945943831
+Y position is : 1.1863830739904515e-15
+Heading is : 0.0
+Velocity is : 2.499894054082248
+Direction is : 1776.5287921960844
+We are on iteration : 36
+X position is : -20.625059594578733
+Y position is : 1.224651664634693e-15
+Heading is : 0.0
+Velocity is : 2.499920540561686
+Direction is : 1776.5287921960844
+We are on iteration : 37
+X position is : -21.25004469593405
+Y position is : 1.262920660736213e-15
+Heading is : 0.0
+Velocity is : 2.4999404054212646
+Direction is : 1776.5287921960844
+We are on iteration : 38
+X position is : -21.875033521950538
+Y position is : 1.3011899609306915e-15
+Heading is : 0.0
+Velocity is : 2.4999553040659483
+Direction is : 1776.5287921960844
+We are on iteration : 39
+X position is : -22.500025141462903
+Y position is : 1.3394594891948891e-15
+Heading is : 0.0
+Velocity is : 2.499966478049461
+Direction is : 1776.5287921960844
+We are on iteration : 40
+X position is : -23.125018856097178
+Y position is : 1.377729188511376e-15
+Heading is : 0.0
+Velocity is : 2.4999748585370956
+Direction is : 1776.5287921960844
+We are on iteration : 41
+X position is : -23.75001414207288
+Y position is : 1.41599901611708e-15
+Heading is : 0.0
+Velocity is : 2.4999811439028217
+Direction is : 1776.5287921960844
+We are on iteration : 42
+X position is : -24.37501060655466
+Y position is : 1.4542689399396966e-15
+Heading is : 0.0
+Velocity is : 2.499985857927116
+Direction is : 1776.5287921960844
+We are on iteration : 43
+X position is : -25.000007954915993
+Y position is : 1.4925389359249978e-15
+Heading is : 0.0
+Velocity is : 2.499989393445337
+Direction is : 1776.5287921960844
+We are on iteration : 44
+X position is : -25.625005966186993
+Y position is : 1.5308089860323124e-15
+Heading is : 0.0
+Velocity is : 2.499992045084003
+Direction is : 1776.5287921960844
+We are on iteration : 45
+X position is : -26.250004474640242
+Y position is : 1.569079076731137e-15
+Heading is : 0.0
+Velocity is : 2.4999940338130022
+Direction is : 1776.5287921960844
+We are on iteration : 46
+X position is : -26.87500335598018
+Y position is : 1.607349197873594e-15
+Heading is : 0.0
+Velocity is : 2.4999955253597514
+Direction is : 1776.5287921960844
+We are on iteration : 47
+X position is : -27.500002516985134
+Y position is : 1.6456193418487756e-15
+Heading is : 0.0
+Velocity is : 2.499996644019814
+Direction is : 1776.5287921960844
+We are on iteration : 48
+X position is : -28.12500188773885
+Y position is : 1.6838895029485005e-15
+Heading is : 0.0
+Velocity is : 2.4999974830148606
+Direction is : 1776.5287921960844
+We are on iteration : 49
+X position is : -28.750001415804135
+Y position is : 1.7221596768916329e-15
+Heading is : 0.0
+Velocity is : 2.4999981122611454
+Direction is : 1776.5287921960844
+We are on iteration : 50
+X position is : -29.3750010618531
+Y position is : 1.760429860467321e-15
+Heading is : 0.0
+Velocity is : 2.499998584195859
+Direction is : 1776.5287921960844
+We are on iteration : 51
+X position is : -29.843750796389823
+Y position is : 1.7987000512674256e-15
+Heading is : 0.0
+Velocity is : 1.8749989381468941
+Direction is : 1776.5287921960844
+We are on iteration : 52
+X position is : -30.195313097292367
+Y position is : 1.827402694367504e-15
+Heading is : 0.0
+Velocity is : 1.4062492036101706
+Direction is : 1776.5287921960844
+We are on iteration : 53
+X position is : -30.458984822969274
+Y position is : 1.848929676692563e-15
+Heading is : 0.0
+Velocity is : 1.054686902707628
+Direction is : 1776.5287921960844
+We are on iteration : 54
+X position is : -30.656738617226953
+Y position is : 1.865074913436357e-15
+Heading is : 0.0
+Velocity is : 0.791015177030721
+Direction is : 1776.5287921960844
+We are on iteration : 55
+X position is : -30.805053962920212
+Y position is : 1.8771838409942025e-15
+Heading is : 0.0
+Velocity is : 0.5932613827730407
+Direction is : 1776.5287921960844
+We are on iteration : 56
+X position is : -30.916290472190155
+Y position is : 1.886265536662587e-15
+Heading is : 0.0
+Velocity is : 0.44494603707978053
+Direction is : 1776.5287921960844
+We are on iteration : 57
+X position is : -30.999717854142613
+Y position is : 1.893076808413875e-15
+Heading is : 0.0
+Velocity is : 0.3337095278098354
+Direction is : 1776.5287921960844
+We are on iteration : 58
+X position is : -31.06228839060696
+Y position is : 1.898185262227341e-15
+Heading is : 0.0
+Velocity is : 0.25028214585737657
+Direction is : 1776.5287921960844
+We are on iteration : 59
+X position is : -31.109216292955217
+Y position is : 1.902016602587441e-15
+Heading is : 0.0
+Velocity is : 0.18771160939303244
+Direction is : 1776.5287921960844
+We are on iteration : 60
+X position is : -31.14441221971641
+Y position is : 1.9048901078575154e-15
+Heading is : 0.0
+Velocity is : 0.14078370704477433
+Direction is : 1776.5287921960844
+We are on iteration : 61
+X position is : -31.170809164787308
+Y position is : 1.9070452368100715e-15
+Heading is : 0.0
+Velocity is : 0.10558778028358075
+Direction is : 1776.5287921960844
+We are on iteration : 62
+X position is : -31.19060687359048
+Y position is : 1.9086615835244884e-15
+Heading is : 0.0
+Velocity is : 0.07919083521268556
+Direction is : 1776.5287921960844
+We are on iteration : 63
+X position is : -31.20545515519286
+Y position is : 1.909873843560301e-15
+Heading is : 0.0
+Velocity is : 0.05939312640951418
+Direction is : 1776.5287921960844
+We are on iteration : 64
+X position is : -31.216591366394642
+Y position is : 1.9107830385871605e-15
+Heading is : 0.0
+Velocity is : 0.044544844807135636
+Direction is : 1776.5287921960844
+We are on iteration : 65
+X position is : -31.22494352479598
+Y position is : 1.9114649348573053e-15
+Heading is : 0.0
+Velocity is : 0.03340863360535173
+Direction is : 1776.5287921960844
+We are on iteration : 66
+X position is : -31.23120764359698
+Y position is : 1.9119763570599137e-15
+Heading is : 0.0
+Velocity is : 0.025056475204013794
+Direction is : 1776.5287921960844
+We are on iteration : 67
+X position is : -31.235905732697734
+Y position is : 1.91235992371187e-15
+Heading is : 0.0
+Velocity is : 0.018792356403010343
+Direction is : 1776.5287921960844
+We are on iteration : 68
+X position is : -31.239429299523298
+Y position is : 1.9126475987008373e-15
+Heading is : 0.0
+Velocity is : 0.014094267302257758
+Direction is : 1776.5287921960844
+We are on iteration : 69
+X position is : -31.24207197464247
+Y position is : 1.912863354942563e-15
+Heading is : 0.0
+Velocity is : 0.010570700476693319
+Direction is : 1776.5287921960844
+We are on iteration : 70
+X position is : -31.24405398098185
+Y position is : 1.913025172123857e-15
+Heading is : 0.0
+Velocity is : 0.00792802535751999
+Direction is : 1776.5287921960844
+We are on iteration : 71
+X position is : -31.245540485736385
+Y position is : 1.9131465350098274e-15
+Heading is : 0.0
+Velocity is : 0.0059460190181399915
+Direction is : 1776.5287921960844
+We are on iteration : 72
+X position is : -31.246655364302285
+Y position is : 1.9132375571743053e-15
+Heading is : 0.0
+Velocity is : 0.004459514263604993
+Direction is : 1776.5287921960844
+We are on iteration : 73
+X position is : -31.24749152322671
+Y position is : 1.913305823797664e-15
+Heading is : 0.0
+Velocity is : 0.003344635697703745
+Direction is : 1776.5287921960844
+We are on iteration : 74
+X position is : -31.248118642420028
+Y position is : 1.9133570237651827e-15
+Heading is : 0.0
+Velocity is : 0.002508476773277809
+Direction is : 1776.5287921960844
+We are on iteration : 75
+X position is : -31.24858898181502
+Y position is : 1.9133954237408217e-15
+Heading is : 0.0
+Velocity is : 0.0018813575799583567
+Direction is : 1776.5287921960844
+We are on iteration : 76
+X position is : -31.24894173636126
+Y position is : 1.9134242237225513e-15
+Heading is : 0.0
+Velocity is : 0.0014110181849687675
+Direction is : 1776.5287921960844
+We are on iteration : 77
+X position is : -31.24920630227094
+Y position is : 1.9134458237088484e-15
+Heading is : 0.0
+Velocity is : 0.0010582636387265756
+Direction is : 1776.5287921960844
+We are on iteration : 78
+X position is : -31.249404726703204
+Y position is : 1.913462023698571e-15
+Heading is : 0.0
+Velocity is : 0.0007936977290449317
+Direction is : 1776.5287921960844
+We are on iteration : 79
+X position is : -31.2495535450274
+Y position is : 1.913474173690863e-15
+Heading is : 0.0
+Velocity is : 0.0005952732967836989
+Direction is : 1776.5287921960844
+We are on iteration : 80
+X position is : -31.249665158770547
+Y position is : 1.9134832861850824e-15
+Heading is : 0.0
+Velocity is : 0.00044645497258777414
+Direction is : 1776.5287921960844
+We are on iteration : 81
+X position is : -31.24974886907791
+Y position is : 1.913490120555747e-15
+Heading is : 0.0
+Velocity is : 0.0003348412294408306
+Direction is : 1776.5287921960844
+We are on iteration : 82
+X position is : -31.24981165180843
+Y position is : 1.913495246333745e-15
+Heading is : 0.0
+Velocity is : 0.0002511309220806229
+Direction is : 1776.5287921960844
+We are on iteration : 83
+X position is : -31.249858738856318
+Y position is : 1.9134990906672436e-15
+Heading is : 0.0
+Velocity is : 0.0001883481915604672
+Direction is : 1776.5287921960844
+We are on iteration : 84
+X position is : -31.249894054142235
+Y position is : 1.9135019739173678e-15
+Heading is : 0.0
+Velocity is : 0.00014126114367035038
+Direction is : 1776.5287921960844
+We are on iteration : 85
+X position is : -31.249920540606674
+Y position is : 1.9135041363549606e-15
+Heading is : 0.0
+Velocity is : 0.00010594585775276278
+Direction is : 1776.5287921960844
+We are on iteration : 86
+X position is : -31.249940405455003
+Y position is : 1.9135057581831553e-15
+Heading is : 0.0
+Velocity is : 7.945939331457209e-05
+Direction is : 1776.5287921960844
+We are on iteration : 87
+X position is : -31.249955304091248
+Y position is : 1.9135069745543014e-15
+Heading is : 0.0
+Velocity is : 5.9594544985929065e-05
+Direction is : 1776.5287921960844
+We are on iteration : 88
+X position is : -31.249966478068433
+Y position is : 1.913507886832661e-15
+Heading is : 0.0
+Velocity is : 4.46959087394468e-05
+Direction is : 1776.5287921960844
+We are on iteration : 89
+X position is : -31.249974858551322
+Y position is : 1.9135085710414306e-15
+Heading is : 0.0
+Velocity is : 3.3521931554585105e-05
+Direction is : 1776.5287921960844
+We are on iteration : 90
+X position is : -31.249981143913487
+Y position is : 1.9135090841980077e-15
+Heading is : 0.0
+Velocity is : 2.514144866593883e-05
+Direction is : 1776.5287921960844
+We are on iteration : 91
+X position is : -31.249985857935112
+Y position is : 1.9135094690654407e-15
+Heading is : 0.0
+Velocity is : 1.885608649945412e-05
+Direction is : 1776.5287921960844
+We are on iteration : 92
+X position is : -31.24998939345133
+Y position is : 1.9135097577160156e-15
+Heading is : 0.0
+Velocity is : 1.4142064874590591e-05
+Direction is : 1776.5287921960844
+We are on iteration : 93
+X position is : -31.249992045088494
+Y position is : 1.9135099742039465e-15
+Heading is : 0.0
+Velocity is : 1.0606548655942943e-05
+Direction is : 1776.5287921960844
+We are on iteration : 94
+X position is : -31.249994033816368
+Y position is : 1.913510136569895e-15
+Heading is : 0.0
+Velocity is : 7.954911491957208e-06
+Direction is : 1776.5287921960844
+We are on iteration : 95
+X position is : -31.249995525362273
+Y position is : 1.9135102583443562e-15
+Heading is : 0.0
+Velocity is : 5.966183618967906e-06
+Direction is : 1776.5287921960844
+We are on iteration : 96
+X position is : -31.249996644021703
+Y position is : 1.913510349675202e-15
+Heading is : 0.0
+Velocity is : 4.474637714225929e-06
+Direction is : 1776.5287921960844
+We are on iteration : 97
+X position is : -31.249997483016273
+Y position is : 1.9135104181733363e-15
+Heading is : 0.0
+Velocity is : 3.3559782856694466e-06
+Direction is : 1776.5287921960844
+We are on iteration : 98
+X position is : -31.2499981122622
+Y position is : 1.913510469546937e-15
+Heading is : 0.0
+Velocity is : 2.516983714252085e-06
+Direction is : 1776.5287921960844
+We are on iteration : 99
+X position is : -31.249998584196646
+Y position is : 1.913510508077138e-15
+Heading is : 0.0
+Velocity is : 1.8877377856890637e-06
+Direction is : 1776.5287921960844
+We are on iteration : 100
+X position is : -31.24999893814748
+Y position is : 1.9135105369747883e-15
+Heading is : 0.0
+Velocity is : 1.4158033392667978e-06
+Direction is : 1776.5287921960844

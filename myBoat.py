@@ -18,17 +18,26 @@ class myBoat:
         self.mm = 0.0005 * 2 * math.pi  # How quickly the boat changes heading
         self.x = 0.0 # Current x coordinate
         self.y = 0.0 # Current y coordinate
-        self.axes = Axes(xlim=(-400,400), ylim=(-400,400), figsize=(9,7))
+        self.axes = Axes(xlim=(-50,50), ylim=(-50,50), figsize=(9,7))
         self.weight = 4.0 # kg
         self.samplePeriod = 0.25 # s
-
+        self.currentX = 0.0
+        self.currentY = 0.0
     def updateSpeed(self, NewtonRight, NewtonLeft, NewtonMiddle, colour = "#ffa500"):
         #Velocity vector
-        
-        if NewtonRight > 10 :
-            NewtonRight = 10
-        if NewtonLeft > 10 :
-            NewtonLeft = 10
+        maxForce = 5
+        if NewtonRight > maxForce :
+            NewtonRight = maxForce
+        if NewtonLeft > maxForce :
+            NewtonLeft = maxForce
+        if NewtonRight < -maxForce:
+            NewtonRight = -maxForce
+        if NewtonLeft < -maxForce:
+            NewtonLeft = -maxForce
+        if NewtonMiddle < -maxForce:
+            NewtonRight = -maxForce
+        if NewtonMiddle < -maxForce:
+            NewtonLeft = -maxForce    
         temp1 = NewtonLeft
         temp2 = NewtonRight
         print(f"NewtonRight is : {temp1}")
@@ -46,44 +55,35 @@ class myBoat:
         vs = self.Velocity * math.sin (alpha - theta)
         
 
-        # We now calculate the drag on the boat
-        dragf = -vf * self.kf
-        drags = -vs * self.ks
+        # We now calculate the forces applied to the boat
+        forceForward = -vf * self.kf + NewtonLeft + NewtonRight
+        forceSideways = -vs * self.ks + NewtonMiddle
         
-        #We can now rotate the drag back into our original coordinate system
-        dragx = dragf * math.cos(theta) - drags * math.sin(theta)
-        dragy = dragf * math.sin(theta)  + drags * math.cos(theta)
+        #We can now rotate the force back into our original coordinate system
+        forceX = forceForward * math.cos(theta) - forceSideways * math.sin(theta)
+        forceY = forceForward * math.sin(theta)  + forceSideways * math.cos(theta)
         
-        #We can now calculate the thrust we have from the 2 engines
-        tx = (NewtonLeft + NewtonRight) * math.cos(self.Heading)
-        ty = (NewtonLeft + NewtonRight) * math.sin(self.Heading)
-
         if self.printInfoVar == 1:
             print(f"vx is : {vx}")
             print(f"vy is : {vy}")
             print(f"alpha is : {alpha}")
             print(f"theta is : {theta}")
             print(f"vf is : {vf}")
-            print(f"vs is : {vs}")
-            print(f"dragf is : {dragf}")
-            print(f"drags is : {drags}")
-            print(f"dragx is : {dragx}")
-            print(f"dragy is : {dragy}")
-            print(f"tx is : {tx}")
-            print(f"ty is : {ty}")
+            print(f"vs is : {vs}") 
+           
         #We can add up the total forces and add the total velocity added to the boat in the sampling period
-        vnewx = vx + (dragx + tx) * self.samplePeriod / self.weight
-        vnewy = vy + (dragy + ty) * self.samplePeriod / self.weight
+        vnewx = vx + forceX * self.samplePeriod / self.weight
+        vnewy = vy + forceY * self.samplePeriod / self.weight
         
         #We can now calculate the variables we need for next cycle
         self.Velocity = math.sqrt(math.pow(vnewx,2) + math.pow(vnewy,2))
         tempComplex = complex(vnewx,vnewy)
         self.Direction = cmath.phase(tempComplex)
         self.Heading = self.Heading + (NewtonRight - NewtonLeft) * self.mm
-
+        print(f"Heading is : {self.Heading}")
         #Updating the current position
-        self.x = vnewx + self.x
-        self.y = vnewy + self.y
+        self.x = vnewx * self.samplePeriod + self.x - self.currentX
+        self.y = vnewy * self.samplePeriod+ self.y - self.currentY
 
         #Updating the map with coordinates
         self.axes.addPoint(Point(self.x,  self.y, color=colour))
@@ -99,7 +99,9 @@ class myBoat:
         print(self.Direction)
 
     def printMap(self):
+        
         self.axes.draw()
+        plt.figure(1)
 
     def getXCoordinate(self):
         return self.x
@@ -107,20 +109,15 @@ class myBoat:
     def getYCoordinate(self):
         return self.y 
 
-    def getDiffDistance(self):
-        a = math.pow((self.xHeading-self.x),2)
-        b = math.pow((self.yHeading-self.y),2)
-        return math.sqrt(a+b)
+    def getHeading(self):
+        return self.Heading 
+    
+    def getDirection(self):
+        return self.Direction 
 
-    def getDiffAngle(self):
-        a = self.xHeading-self.x
-        b = self.yHeading-self.y
-        return math.atan(b/a)
+    def getVelocity(self):
+        return self.Velocity 
 
-    def setHeading(self, xheading, yheading):
-        self.xHeading = xheading
-        self.yHeading = yheading
-        
     def convertInput(self, input):
         #polynomial = [-5.8859e-27,5.2262e-23,-1.0801e-19,-5.3918e-16, 3.9074e-12,-1.1351e-08,1.9300e-05,-2.0620e-02,1.3693e+01,-5.1876e+03,8.5959e+05]
         polynomial = [0.000000021706, -0.000095639135, 0.143970308054, -74.013419146878]
