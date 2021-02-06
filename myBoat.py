@@ -18,14 +18,14 @@ class myBoat:
         self.mm = 0.0005 * 2 * math.pi  # How quickly the boat changes heading
         self.x = 0.0 # Current x coordinate
         self.y = 0.0 # Current y coordinate
-        self.axes = Axes(xlim=(-50,50), ylim=(-50,50), figsize=(9,7))
-        self.weight = 4.0 # kg
+        self.axes = Axes(xlim=(0,3), ylim=(0,8), figsize=(9,7))
+        self.weight = 7.0 # kg
         self.samplePeriod = 0.25 # s
         self.currentX = 0.0
         self.currentY = 0.0
     def updateSpeed(self, NewtonRight, NewtonLeft, NewtonMiddle, colour = "#ffa500"):
         #Velocity vector
-        maxForce = 5
+        maxForce = 3
         if NewtonRight > maxForce :
             NewtonRight = maxForce
         if NewtonLeft > maxForce :
@@ -40,10 +40,10 @@ class myBoat:
             NewtonLeft = -maxForce    
         temp1 = NewtonLeft
         temp2 = NewtonRight
-        print(f"NewtonRight is : {temp1}")
-        print(f"Newtonleft is : {temp2}")
-        print(f"XCoord is : {self.x}")
-        print(f"YCoord is : {self.y}")
+        #print(f"NewtonRight is : {temp1}")
+        #print(f"Newtonleft is : {temp2}")
+        #print(f"XCoord is : {self.x}")
+        #print(f"YCoord is : {self.y}")
         vx = self.Velocity * math.cos(self.Direction)
         vy = self.Velocity * math.sin(self.Direction)
        
@@ -80,7 +80,7 @@ class myBoat:
         tempComplex = complex(vnewx,vnewy)
         self.Direction = cmath.phase(tempComplex)
         self.Heading = self.Heading + (NewtonRight - NewtonLeft) * self.mm
-        print(f"Heading is : {self.Heading}")
+        #print(f"Heading is : {self.Heading}")
         #Updating the current position
         self.x = vnewx * self.samplePeriod + self.x - self.currentX
         self.y = vnewy * self.samplePeriod+ self.y - self.currentY

@@ -68,6 +68,8 @@ class Axes():
         # Save the image?
         if image:
             plt.savefig(image)
+        plt.ylabel('(m)')
+        plt.xlabel('(m)')  
         plt.show()
         
     def addPoints(self, points):

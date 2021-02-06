@@ -27,18 +27,18 @@ def logThisLine(iteration):
     logging.info(f"Direction is : {myBoat.getDirection()/2*math.pi*360}")
 
 #This functions runs the first test scenario as described in the report
-def fowardTestCase():
+def forwardTestCase():
     count = 0
     velocityData.append(myBoat.getVelocity())
     timeData.append(count*samplePeriod)
     count = count + 1
-    for i in range(50):
+    for i in range(40):
         myBoat.updateSpeed(10.0,10.0,0.0)
         velocityData.append(myBoat.getVelocity())
         timeData.append(count*samplePeriod)
         logThisLine(count)
         count = count + 1
-    for i in range (50):
+    for i in range (40):
         myBoat.updateSpeed(0.0,0.0,0.0)
         velocityData.append(myBoat.getVelocity())
         timeData.append(count*samplePeriod)
@@ -54,13 +54,13 @@ def backwardTestCase():
     velocityData.append(myBoat.getVelocity())
     timeData.append(count*samplePeriod)
     count = count + 1
-    for i in range(50):
+    for i in range(40):
         myBoat.updateSpeed(-10.0,-10.0,0.0)
         velocityData.append(myBoat.getVelocity())
         timeData.append(count*samplePeriod)
         logThisLine(count)
         count = count + 1
-    for i in range (50):
+    for i in range (40):
         myBoat.updateSpeed(0.0,0.0,0.0)
         velocityData.append(myBoat.getVelocity())
         timeData.append(count*samplePeriod)
@@ -127,14 +127,14 @@ def turnLeftTestCase():
     timeData.append(count*samplePeriod)
     headingData.append(myBoat.getHeading())
     count = count + 1
-    for i in range(50):
+    for i in range(40):
         myBoat.updateSpeed(10.0,0.0,0.0)
         velocityData.append(myBoat.getVelocity())
         headingData.append(myBoat.getHeading()% (2*math.pi))
         timeData.append(count*samplePeriod)
         logThisLine(count)
         count = count + 1
-    for i in range(50):
+    for i in range(40):
         myBoat.updateSpeed(10.0,10.0,0.0)
         velocityData.append(myBoat.getVelocity())
         headingData.append(myBoat.getHeading()% (2*math.pi))
@@ -153,14 +153,14 @@ def turnRightTestCase():
     timeData.append(count*samplePeriod)
     headingData.append(myBoat.getHeading())
     count = count + 1
-    for i in range(50):
+    for i in range(40):
         myBoat.updateSpeed(0.0,10.0,0.0)
         velocityData.append(myBoat.getVelocity())
         headingData.append(myBoat.getHeading()% (2*math.pi))
         timeData.append(count*samplePeriod)
         logThisLine(count)
         count = count + 1
-    for i in range(50):
+    for i in range(40):
         myBoat.updateSpeed(10.0,10.0,0.0)
         velocityData.append(myBoat.getVelocity())
         headingData.append(myBoat.getHeading()% (2*math.pi))

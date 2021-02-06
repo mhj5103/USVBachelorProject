@@ -17,3 +17,5 @@ class PID:
         self.Ki = ki
     def setKd(self, kd):
         self.Kd =kd
+    def getKp(self):
+        return self.Kp
