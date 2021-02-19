@@ -10,8 +10,8 @@ from pysondb import db
 import json
 from myBoat import myBoat 
 myBoat = myBoat() 
-XCoord = 0.0
-YCoord = 0.0
+XCoord = 1.0
+YCoord = 5.0
 Angle = 0.5*math.pi
 timeData = []
 velocityData = []
@@ -29,7 +29,7 @@ def control_loop(num):
     while 1 > 0:
         
         if(time.time() > startTime):
-            startTime += 0.11
+            startTime += 0.01
             global count
             global headingData
             global velocityData
@@ -47,9 +47,6 @@ def control_loop(num):
             if checkValue > tempPolar[0]:
                 checkValue = 1.5
                 print("We are in the close distance step")
-                print(XCoord)
-                print(YCoord)
-                print(PIDA.getKp())
                 #More vector calculus YAY!
                 vf = tempPolar[0] * math.cos (tempPolar[1]-myBoat.getHeading())
                 vs = tempPolar[0] * math.sin (tempPolar[1]-myBoat.getHeading())
@@ -60,7 +57,7 @@ def control_loop(num):
                 myBoat.updateSpeed(FarDistanceModeSpeed+PIDAngle, FarDistanceModeSpeed-PIDAngle, 0)
                 checkValue = 1
             n = n+1
-            if n > 250:
+            if n > 400:
                 break
 
   
@@ -93,16 +90,16 @@ def update_db_loop(num):
                 endTime = time.time() +5
                 
                 i = i + 1
-            if i > 4:
+            if i > 0:
                 break
         
 
             
   
 if __name__ == "__main__": 
-    PIDA = PID(0.0,0.0,0.0)#PID(32,0.01,0.1)
-    PIDX = PID(0.0,0.0,0.0)#PID(0.4,0.002,0.1)
-    PIDY = PID(0.0,0.0,0.0)#PID(0.4,0.002,0.1)
+    PIDA = PID(32,0.01,0.1)
+    PIDX = PID(0.4,0.002,0.1)
+    PIDY = PID(0.4,0.002,0.1)
     n = 0
     t1 = threading.Thread(target=update_db_loop, args=(10,)) 
     t2 = threading.Thread(target=control_loop, args=(10,)) 
@@ -119,9 +116,9 @@ if __name__ == "__main__":
   
     # both threads completely executed 
     print("Done!") 
-    #myBoat.printMap()
+    myBoat.printMap()
     plt.figure(2)
-    plt.plot(timeData,velocityData)
-    plt.ylabel('Velocity (m/s)')
+    plt.plot(timeData,headingData)
+    plt.ylabel('Heading (rad)')
     plt.xlabel('Time (s)')  
     plt.show()

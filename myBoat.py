@@ -16,13 +16,13 @@ class myBoat:
         self.kf = 4 # The drag coefficient from the forward movement
         self.ks = 8 # The drag coeffictient from the sideway movement
         self.mm = 0.0005 * 2 * math.pi  # How quickly the boat changes heading
-        self.x = 0.0 # Current x coordinate
-        self.y = 0.0 # Current y coordinate
+        self.x = 1.0 # Current x coordinate
+        self.y = 5.2 # Current y coordinate
         self.axes = Axes(xlim=(0,3), ylim=(0,8), figsize=(9,7))
         self.weight = 7.0 # kg
         self.samplePeriod = 0.25 # s
-        self.currentX = 0.0
-        self.currentY = 0.0
+        self.currentX = 0
+        self.currentY = 0.01
     def updateSpeed(self, NewtonRight, NewtonLeft, NewtonMiddle, colour = "#ffa500"):
         #Velocity vector
         maxForce = 3
@@ -82,8 +82,8 @@ class myBoat:
         self.Heading = self.Heading + (NewtonRight - NewtonLeft) * self.mm
         #print(f"Heading is : {self.Heading}")
         #Updating the current position
-        self.x = vnewx * self.samplePeriod + self.x - self.currentX
-        self.y = vnewy * self.samplePeriod+ self.y - self.currentY
+        self.x = vnewx * self.samplePeriod + self.x + self.currentX
+        self.y = vnewy * self.samplePeriod+ self.y + self.currentY
 
         #Updating the map with coordinates
         self.axes.addPoint(Point(self.x,  self.y, color=colour))
